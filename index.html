@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Abroad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    
+</style>
+<body class="bg-gray-100">
+    <!-- navbar -->
+    <nav class="backdrop-blur-sm  p-4 shadow-lg fixed top-0 left-0 w-full z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo (Click to Scroll to Form) -->
+            <div class="text-2xl font-bold cursor-pointer" onclick="scrollToForm()">Study MBBS Abroad</div>
+    
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex space-x-6 text-lg">
+                <li><a href="#home" class=" text-xl font-semibold hover:text-gray-400">Home</a></li>
+                <li><a href="#about" class=" text-xl font-semibold hover:text-gray-400">About</a></li>
+                <li><a href="#contact" class=" text-xl font-semibold hover:text-gray-400">Contact Us</a></li>
+            </ul>
+    
+            <!-- Search Box -->
+            <div class="relative hidden md:block">
+                <input type="text" placeholder="Search..." class="bg-gray-800 text-white px-4 py-2 rounded-full focus:outline-none">
+                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400">
+                    🔍
+                </button>
+            </div>
+    
+            <!-- User Dropdown -->
+            <div class="relative group">
+                <!-- User Button -->
+                <button id="userBtn" class="p-3 rounded-full bg-gray-800 hover:bg-gray-700 text-white flex items-center space-x-2">
+                    👤 <span class="hidden sm:inline">user231</span>
+                </button>
+            
+                <!-- Dropdown Menu -->
+                <div id="userDropdown" class="hidden group-hover:block absolute right-0 mt-0 w-48 bg-white text-black rounded-lg shadow-lg border">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-300">👤 Profile</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-300">⚙️ Settings</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-300">📩 Messages</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-300">🔒 Change Password</a>
+                    <hr class="border-gray-300">
+                    <a href="#" class="block px-4 py-2 text-red-500 hover:bg-red-100">🚪 Logout</a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    
+    
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center text-white text-center py-20 px-4  rounded-md" style="background-image: url('Images/University.jpeg');">
+        <!-- Text Container with Blur Effect -->
+        <div class="inline-block bg-black/30 backdrop-blur- px-6 py-4 rounded-lg">
+            <h1 class="text-4xl text-white font-bold">Study MBBS Abroad</h1>
+            <p class="mt-4 text-lg">Explore top destinations for MBBS with hassle-free admission.</p>
+            <button onclick="scrollToForm()" class="mt-6 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-700 hover:text-white transition">
+                Apply Now
+            </button>
+        </div>
+    </section>
+    
+    <!-- Why Study MBBS Abroad -->
+   <div class=" rounded-md" style="background-image: url('Images/why.jpg');">
+     
+     <section class="py-16  px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl  text-white font-bold text-center italic font-sans">Why Study MBBS Abroad?</h2>
+        <p class="text-center text-white text-xl font-serif mt-4 tracking-tighter   text-gray-700">
+           <div class=" backdrop-blur-md  border border-black rounded-md text-xl h-auto lg:h-[50px]  lg:w-[60vw] px-6 lg:px-10 text-white flex  items-center ">
+             🌍 Study in globally recognized universities with WHO & MCI approval.
+            </div> <br>
+
+            <div class=" backdrop-blur-md  border border-black rounded-md text-xl h-auto lg:h-[50px]  lg:w-[60vw] px-6 lg:px-10 text-white flex  items-center ">
+            💰 Affordable tuition fees and cost of living compared to private colleges. </div> <br>
+
+            <div class=" backdrop-blur-md  border border-black rounded-md text-xl h-auto lg:h-[50px]  lg:w-[60vw] px-6 lg:px-10 text-white flex  items-center ">
+                🎓 No hefty donations—100% merit-based admissions in top universities.</div> <br>
+
+            <div class=" backdrop-blur-md  border border-black rounded-md text-xl h-auto lg:h-[50px]  lg:w-[60vw] px-6 lg:px-10 text-white flex  items-center ">
+                 
+            📚 English-medium programs with modern curriculum & practical exposure. </div> <br>
+    
+            <div class=" backdrop-blur-md  border border-black rounded-md text-xl h-auto lg:h-[50px]  lg:w-[60vw] px-6 lg:px-10 text-white flex  items-center ">
+                 
+                🏥 Advanced medical facilities and clinical training at top hospitals.   </div> <br>
+
+            <div class=" backdrop-blur-md  border border-black rounded-md text-xl h-auto lg:h-[50px]  lg:w-[60vw] px-6 lg:px-10 text-white flex  items-center ">
+                 
+                ✈️ International exposure with a diverse, multicultural learning environment.    </div> <br>
+
+             <div class=" backdrop-blur-md  border border-black rounded-md text-xl h-auto lg:h-[50px]  lg:w-[60vw] px-6 lg:px-10 text-white flex  items-center ">
+                 
+                🔄 Easy admission process with minimal entrance requirements      </div> <br>
+          
+          
+           
+        </p>
+    </section>
+   </div>
+
+    <!-- Top Countries -->
+    <section class="py-16 bg-white px-6 rounded-md" style="background-image: url('Images/Map_bg.jpg');">
+        <h2 class="text-3xl font-bold text-center">Top Countries for MBBS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 text-2xl font-serif gap-6 mt-8 max-w-5xl mx-auto">
+            
+            <div class="backdrop-blur-md border border-black p-6 shadow-md font-serif shadow-black rounded-lg">
+                <h3 class="text-xl font-bold text-center">Russia</h3>
+                <ul class="text-lg list-disc pl-5">
+                    <li>Moscow State Medical University</li>
+                    <li>Kazan Federal University</li>
+                    <li>Saint Petersburg State Medical University</li>
+                </ul>
+            </div>
+    
+            <div class="backdrop-blur-md border border-black p-6 shadow-md font-serif shadow-black rounded-lg">
+                <h3 class="text-xl font-bold text-center">Uzbekistan</h3>
+                <ul class="text-lg list-disc pl-5">
+                    <li>Tashkent Medical Academy</li>
+                    <li>Samarkand State Medical University</li>
+                    <li>Bukhara State Medical Institute</li>
+                </ul>
+            </div>
+    
+            <div class="backdrop-blur-md border border-black p-6 shadow-md font-serif shadow-black rounded-lg">
+                <h3 class="text-xl font-bold text-center">Kazakhstan</h3>
+                <ul class="text-lg list-disc pl-5">
+                    <li>Al-Farabi Kazakh National University</li>
+                    <li>Astana Medical University</li>
+                    <li>Karaganda Medical University</li>
+                </ul>
+            </div>
+    
+            <div class="backdrop-blur-md border border-black p-6 shadow-md font-serif shadow-black rounded-lg">
+                <h3 class="text-xl font-bold text-center">Philippines</h3>
+                <ul class="text-lg list-disc pl-5">
+                    <li>University of Santo Tomas</li>
+                    <li>Davao Medical School Foundation</li>
+                    <li>Cebu Doctors' University</li>
+                </ul>
+            </div>
+    
+            <div class="backdrop-blur-md border border-black p-6 shadow-md font-serif shadow-black rounded-lg">
+                <h3 class="text-xl font-bold text-center">Georgia</h3>
+                <ul class="text-lg list-disc pl-5">
+                    <li>Tbilisi State Medical University</li>
+                    <li>European University</li>
+                    <li>Ivane Javakhishvili Tbilisi State University</li>
+                </ul>
+            </div>
+    
+            <div class="backdrop-blur-md border border-black p-6 shadow-md font-serif shadow-black rounded-lg">
+                <h3 class="text-xl font-bold text-center">Kyrgyzstan</h3>
+                <ul class="text-lg list-disc pl-5">
+                    <li>Kyrgyz State Medical Academy</li>
+                    <li>Jalal-Abad State University</li>
+                    <li>International School of Medicine</li>
+                </ul>
+            </div>
+    
+            <div class="backdrop-blur-md border border-black p-6 shadow-md font-serif shadow-black rounded-lg">
+                <h3 class="text-xl font-bold text-center">Egypt</h3>
+                <ul class="text-lg list-disc pl-5">
+                    <li>Cairo University Faculty of Medicine</li>
+                    <li>Ain Shams University</li>
+                    <li>Alexandria University</li>
+                </ul>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!-- Admission Process & Eligibility -->
+     <div class="rounded-md" style="background-image: url('Images/Woody.png');" >
+        <section class="py-20 px-6 max-w-6xl mx-auto" >
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900">Admission Process & Eligibility</h2>
+
+    <p class="mt-6 text-lg md:text-xl text-center text-gray-700 italic">
+        Follow these simple steps to secure your admission in a top-ranked MBBS university abroad.
+    </p>
+
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Admission Process -->
+        <div class="backdrop-blur-sm shadow-lg shadow-black border border-black p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">📌 Step-by-Step Admission Process</h3>
+            <ul class="list-disc font-serif list-inside text-lg text-gray-700 leading-relaxed">
+                <li><span class="font-semibold">Check eligibility criteria</span> based on country requirements.</li>
+                <li><span class="font-semibold">Select a university</span> & submit your application with documents.</li>
+                <li><span class="font-semibold">Receive an admission letter</span> confirming your seat.</li>
+                <li><span class="font-semibold">Apply for a student visa</span> with the required documents.</li>
+                <li><span class="font-semibold">Book your travel</span> and arrange accommodation.</li>
+                <li><span class="font-semibold">Begin your MBBS journey!</span> Attend orientation & start classes.</li>
+            </ul>
+        </div>
+
+        <!-- Eligibility Criteria -->
+        <div class="backdrop-blur-sm shadow-lg shadow-black border border-black p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">✅ Eligibility Criteria</h3>
+            <ul class="list-disc font-serif list-inside text-lg text-gray-700 leading-relaxed">
+                <li>Minimum <span class="font-semibold">50% marks</span> in Physics, Chemistry & Biology (PCB).</li>
+                <li>Age should be <span class="font-semibold">17 years or above</span> at the time of admission.</li>
+                <li><span class="font-semibold">NEET qualification</span> required for Indian students.</li>
+                <li>Valid <span class="font-semibold">passport</span> for visa processing.</li>
+                <li>Some universities may require an <span class="font-semibold">English proficiency test</span>.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-12 text-center">
+        <button onclick="scrollToForm()" class="bg-blue-600 text-white text-xl px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition">
+            Apply Now for MBBS Abroad
+        </button>
+    </div>
+        </section>
+    </div>
+
+
+    <!-- Call to Action Form -->
+    <div class="" style="background-image: url('Images/Woody.png');">
+        <section id="apply-form" class="py-16 px-6">
+            <h2 class="text-3xl font-bold text-center">Apply Now</h2>
+            <form id="mbbsForm" class="max-w-lg mx-auto border border-black shadow-lg shadow-black p-6 rounded-lg backdrop-blur-lg shadow mt-6">
+                <div class="mb-4">
+                    <label class="block font-semibold">Name*</label>
+                    <input type="text" id="name" class="w-full p-3 border rounded-lg" placeholder="Enter your name">
+                    <p id="nameError" class="text-red-600 text-sm hidden">Name must be at least 3 characters.</p>
+                </div>
+                <div class="mb-4">
+                    <label class="block font-semibold">Email*</label>
+                    <input type="email" id="email" class="w-full p-3 border rounded-lg" placeholder="Enter your email">
+                    <p id="emailError" class="text-red-600 text-sm hidden">Enter a valid email.</p>
+                </div>
+                <div class="mb-4">
+                    <label class="block font-semibold">Phone*</label>
+                    <input type="tel" id="phone" class="w-full p-3 border rounded-lg" placeholder="Enter your phone number">
+                    <p id="phoneError" class="text-red-600 text-sm hidden">Phone number must be at least 10 digits.</p>
+                </div>
+                <div class="mb-4">
+                    <label class="block font-semibold">Preferred Country</label>
+                    <select id="country" class="w-full p-3 border rounded-lg">
+                        <option value="">Select a country</option>
+                        <option>Russia</option>
+                        <option>Uzbekistan</option>
+                        <option>Kazakhstan</option>
+                        <option>Philippines</option>
+                        <option>Georgia</option>
+                        <option>Kyrgyzstan</option>
+                        <option>Egypt</option>
+                    </select>
+                    <p id="countryError" class="text-red-600 text-sm hidden">Please select a country.</p>
+                </div>
+                <button onclick="check()" type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">Submit</button>
+            </form>
+        </section>
+    </div>
+    
+    
+
+</body>
+<script src="script.js"></script>
+</html>
