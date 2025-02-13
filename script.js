@@ -1,4 +1,4 @@
-
+console.log("Welcome To Our Site !")
 // form validation script 
 const check = () => {
     document.getElementById("mbbsForm").addEventListener("submit", function(event) {
@@ -48,15 +48,33 @@ const check = () => {
 
 
     // Scroll to form when clicking "Apply Now"
-    function scrollToForm() {
+function scrollToForm() {
         document.getElementById("apply-form").scrollIntoView({ behavior: "smooth" });
     }
 
-    // User dropdown toggle
-    document.getElementById("userBtn").addEventListener("click", function() {
-        let dropdown = document.getElementById("userDropdown");
-        dropdown.classList.toggle("hidden");
-    });
 
+
+
+    
+        // Toggle Mobile Menu
+        document.getElementById("menuBtn").addEventListener("click", function () {
+            document.getElementById("navMenu").classList.toggle("hidden");
+        });
+        // Toggle User Dropdown
+        document.getElementById("userBtn").addEventListener("click", function (event) {
+            event.stopPropagation(); // Prevents it from closing immediately
+            document.getElementById("userDropdown").classList.toggle("hidden");
+        });
+
+        
+ // Close dropdown when clicking outside
+ document.addEventListener("click", function (event) {
+    let dropdown = document.getElementById("userDropdown");
+    let userBtn = document.getElementById("userBtn");
+
+    if (!dropdown.contains(event.target) && !userBtn.contains(event.target)) {
+        dropdown.classList.add("hidden");
+    }
+});
 
 
